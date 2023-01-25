@@ -5,9 +5,61 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header{
+  color: white;
+  background-color: rgb(47, 45, 45);
+  padding:  .7rem 1rem;
+}
+header p{
+  font-size: 1.5rem;
+}
+.card p{
+  text-align: center;
+  padding: .15rem;
+  font-size: 1.1rem;
+}
+input{
+max-width: 50%;  
+}
+.allcards .card{
+  max-width: min(260px,60vw);
+  padding: .5rem;
+border: 2px solid rgba(0, 0, 0, 0.407);
+}
+.card > p:hover{
+text-decoration: underline;
+cursor: pointer;
+}
+.allcards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1.3rem;
+}
+img{
+  height: 80%;
+} 
+ h1{
+font-size: calc(1.525rem + 3.3vw);
+
+ }
+.movieContanier{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1.3rem;
+  width: 100%;
+  flex-wrap: wrap;
+} 
+.movieContanier .description{
+padding: 1rem;
+max-height: 500px;
+text-align: left;
+border: 5px solid rgba(0, 0, 0, 0.23);
+width: min(670px,90vw);
+
 }
